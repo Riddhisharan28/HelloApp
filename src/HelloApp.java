@@ -1,7 +1,7 @@
 /** HelloApp.java-A simple Java application that prints "Hello, World!" to the console.
  * This is the first step in learning HelloApp journey, where we will explore the basics of Java programming and understand how to create and run a simple Java application. The HelloApp class contains the main method, which is the entry point of the application. When we run this program, it will execute the main method and print "Hello, World!" to the console. This is a common tradition in programming to create a simple program that outputs "Hello, World!" as a way to demonstrate that the programming environment is set up correctly and to introduce new programmers to the syntax of the language.
  * @author Riddhi
- * @version 1.0
+ * @version 3.0
  */
 /**
  * Key Java Concepts Used:
@@ -12,7 +12,10 @@
  */
 public class HelloApp {
 public static void main(String[] args) {
-    String name = args[0]; // Get the first command line argument
+    String name= "World";
+    if (args.length > 0) {
+        name = args[0];
+    }
     System.out.println("Hello, " + name + "!");
 }
 }
